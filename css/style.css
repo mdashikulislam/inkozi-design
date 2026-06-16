@@ -1162,7 +1162,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile-info .profile-name .verified-badge {
-  font-size: 15px;
+   display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-solid);
 }
 
 .profile-info .profile-specialty {
