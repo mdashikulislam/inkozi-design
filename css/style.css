@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-outline-pink {
   color: var(--primary-pink);
-  border: 2px solid var(--primary-pink);
+  border: 1px solid var(--primary-pink);
   background: transparent;
   border-radius: var(--radius-md);
   font-weight: 600;
@@ -497,6 +497,10 @@ h1, h2, h3, h4, h5, h6 {
 /* ================================================================
    SEARCH PAGE
    ================================================================ */
+.search-page-bg {
+  background-color: var(--bg-offwhite);
+}
+
 .search-bg-glow {
   position: absolute;
   top: 0;
@@ -790,22 +794,22 @@ h1, h2, h3, h4, h5, h6 {
 /* Lawyer Card */
 .lawyer-card {
   background: var(--white);
-  border-bottom: 1px solid var(--border-light);
-  padding: 24px 0;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 24px;
   transition: var(--transition);
-}
-
-.lawyer-card:first-child {
-  border-top: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
 }
 
 .lawyer-card:hover {
-  background: var(--bg-offwhite);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 .lawyer-card .lawyer-photo {
-  width: 130px;
-  height: 155px;
+  width: 150px;
+  height: 150px;
   border-radius: var(--radius-md);
   object-fit: cover;
   flex-shrink: 0;
@@ -874,7 +878,6 @@ h1, h2, h3, h4, h5, h6 {
 .lawyer-card .lawyer-desc {
   font-size: 14px;
   color: var(--text-light);
-  font-style: italic;
   line-height: 1.5;
   margin-top: 8px;
 }
