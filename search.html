@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compare top DUI attorneys in Orlando. Read reviews, view lawyer profiles, and get the legal help you need.">
+  <title>DUI Lawyers in Orlando, FL — InKozi</title>
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar navbar-expand-lg navbar-inkozi sticky-top" id="main-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" id="brand-logo">
+        <div class="brand-icon"><span>ASK</span></div>
+        <div class="brand-text">
+          <span class="brand-name">InKozi</span>
+          <span class="brand-tagline">Ask • Trust • Connect</span>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lawyers by Location</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Florida</a></li>
+              <li><a class="dropdown-item" href="#">California</a></li>
+              <li><a class="dropdown-item" href="#">Texas</a></li>
+              <li><a class="dropdown-item" href="#">New York</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lawyers by Practice Area</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Criminal Defense</a></li>
+              <li><a class="dropdown-item" href="#">DUI / DWI</a></li>
+              <li><a class="dropdown-item" href="#">Family Law</a></li>
+              <li><a class="dropdown-item" href="#">Personal Injury</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Q&A</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">How It Works</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <button class="nav-search-btn" type="button"><i class="bi bi-search"></i></button>
+          <a href="#" class="nav-link nav-grow-link d-none d-lg-inline">Grow your practice</a>
+          <a href="#" class="btn btn-signin"><i class="bi bi-person-fill"></i> Sign in</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       BREADCRUMB
+       ============================================================ -->
+  <section class="breadcrumb-section" id="breadcrumb">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">DUI / DWI Lawyers</a></li>
+          <li class="breadcrumb-item"><a href="#">Florida</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Orlando</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <div class="container">
+    <div class="row">
+
+      <!-- LEFT: Main Content -->
+      <div class="col-lg-8">
+
+        <!-- Search Header -->
+        <div class="search-header" id="search-header">
+          <h1>DUI Lawyers in Orlando, FL</h1>
+          <p>Compare top DUI attorneys in Orlando. Read reviews, view lawyer profiles, and get the legal help you need.</p>
+        </div>
+
+        <!-- Search Filters -->
+        <div class="search-filters" id="search-filters">
+          <div class="filter-bar">
+            <div class="input-icon-wrapper" style="flex: 1;">
+              <i class="bi bi-search"></i>
+              <select class="form-select" id="filter-practice-area" style="padding-left: 40px;">
+                <option selected>DUI / DWI</option>
+                <option>Criminal Defense</option>
+                <option>Family Law</option>
+                <option>Personal Injury</option>
+                <option>Immigration</option>
+                <option>Bankruptcy</option>
+              </select>
+            </div>
+            <div class="input-icon-wrapper" style="flex: 1;">
+              <i class="bi bi-geo-alt"></i>
+              <input type="text" class="form-control" placeholder="Orlando, FL" value="Orlando, FL" id="filter-location" style="padding-left: 40px;">
+            </div>
+            <button class="btn btn-gradient" style="height: 48px; padding: 0 32px; white-space: nowrap;" id="filter-search-btn">
+              <i class="bi bi-search me-1"></i> Search
+            </button>
+          </div>
+        </div>
+
+        <!-- Trust Badges Row -->
+        <div class="trust-badges-row" id="trust-badges">
+          <div class="trust-badge-item">
+            <div class="badge-icon-sm green">
+              <i class="bi bi-check-circle-fill"></i>
+            </div>
+            <div>
+              <div class="badge-title">Verified Lawyers</div>
+              <div class="badge-desc">All lawyers are screened and reviewed</div>
+            </div>
+          </div>
+          <div class="trust-badge-item">
+            <div class="badge-icon-sm green">
+              <i class="bi bi-currency-dollar"></i>
+            </div>
+            <div>
+              <div class="badge-title">Affordable Options</div>
+              <div class="badge-desc">Find low-cost payment plans</div>
+            </div>
+          </div>
+          <div class="trust-badge-item">
+            <div class="badge-icon-sm orange">
+              <i class="bi bi-clock-fill"></i>
+            </div>
+            <div>
+              <div class="badge-title">On-Demand Help</div>
+              <div class="badge-desc">Connect with a lawyer when you need it.</div>
+            </div>
+          </div>
+          <div class="trust-badge-item">
+            <div class="badge-icon-sm pink">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <div>
+              <div class="badge-title">Trusted by Our Community</div>
+              <div class="badge-desc">Helping families across Florida</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Listing Header -->
+        <div class="listing-header" id="listing-header">
+          <div>
+            <h2>DUI Lawyers in Orlando, FL</h2>
+            <span class="result-count">1–20 of 152 results</span>
+          </div>
+          <div class="sort-select">
+            <label for="sort-by">Sort by</label>
+            <select id="sort-by">
+              <option selected>Best Match</option>
+              <option>Highest Rated</option>
+              <option>Most Reviewed</option>
+              <option>Nearest</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Lawyer Card 1 -->
+        <div class="lawyer-card" id="lawyer-card-1">
+          <div class="row g-3">
+            <div class="col-md-3 col-4">
+              <img src="images/lawyer-1.jpg" alt="Amir A. Ladan" class="lawyer-photo">
+            </div>
+            <div class="col-md-5 col-8">
+              <div class="d-flex align-items-center gap-2 flex-wrap mb-1">
+                <span class="lawyer-name">Amir A. Ladan</span>
+                <span class="verified-badge"><i class="bi bi-check-circle-fill"></i> Verified Lawyer</span>
+              </div>
+              <div class="lawyer-specialty">Criminal Defense  •  DUI / DWI</div>
+              <div class="lawyer-location"><i class="bi bi-geo-alt-fill"></i> Orlando, FL (5.2 miles)</div>
+              <div class="lawyer-rating">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <span class="rating-text">4.9 (128 reviews)</span>
+              </div>
+              <p class="lawyer-desc">Former prosecutor with over 15 years of experience defending clients against DUI and criminal charges.</p>
+            </div>
+            <div class="col-md-4 text-md-end">
+              <div class="lawyer-phone">
+                <i class="bi bi-telephone-fill"></i> (407) 555-0123
+              </div>
+              <a href="profile.html" class="btn btn-outline-pink btn-view-profile" id="view-profile-1">View Profile</a>
+              <a href="#" class="live-chat-link" id="live-chat-1">
+                <i class="bi bi-chat-dots-fill"></i> Live Chat
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lawyer Card 2 -->
+        <div class="lawyer-card" id="lawyer-card-2">
+          <div class="row g-3">
+            <div class="col-md-3 col-4">
+              <img src="images/lawyer-2.jpg" alt="John P. Morgan" class="lawyer-photo">
+            </div>
+            <div class="col-md-5 col-8">
+              <div class="d-flex align-items-center gap-2 flex-wrap mb-1">
+                <span class="lawyer-name">John P. Morgan</span>
+                <span class="verified-badge"><i class="bi bi-check-circle-fill"></i> Verified Lawyer</span>
+              </div>
+              <div class="lawyer-specialty">Criminal Defense  •  DUI / DWI</div>
+              <div class="lawyer-location"><i class="bi bi-geo-alt-fill"></i> Orlando, FL (3.7 miles)</div>
+              <div class="lawyer-rating">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <span class="rating-text">4.8 (96 reviews)</span>
+              </div>
+              <p class="lawyer-desc">Aggressive defense for DUI charges. I fight to protect your rights and get the best possible outcome.</p>
+            </div>
+            <div class="col-md-4 text-md-end">
+              <div class="lawyer-phone">
+                <i class="bi bi-telephone-fill"></i> (407) 555-0188
+              </div>
+              <a href="profile.html" class="btn btn-outline-pink btn-view-profile" id="view-profile-2">View Profile</a>
+              <a href="#" class="live-chat-link" id="live-chat-2">
+                <i class="bi bi-chat-dots-fill"></i> Live Chat
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lawyer Card 3 -->
+        <div class="lawyer-card" id="lawyer-card-3">
+          <div class="row g-3">
+            <div class="col-md-3 col-4">
+              <img src="images/lawyer-3.jpg" alt="Maria E. Gonzalez" class="lawyer-photo">
+            </div>
+            <div class="col-md-5 col-8">
+              <div class="d-flex align-items-center gap-2 flex-wrap mb-1">
+                <span class="lawyer-name">Maria E. Gonzalez</span>
+                <span class="verified-badge"><i class="bi bi-check-circle-fill"></i> Verified Lawyer</span>
+              </div>
+              <div class="lawyer-specialty">Criminal Defense  •  DUI / DWI</div>
+              <div class="lawyer-location"><i class="bi bi-geo-alt-fill"></i> Orlando, FL (6.1 miles)</div>
+              <div class="lawyer-rating">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <span class="rating-text">4.7 (72 reviews)</span>
+              </div>
+              <p class="lawyer-desc">Dedicated to helping clients through tough times. I provide honest advice and strong representation.</p>
+            </div>
+            <div class="col-md-4 text-md-end">
+              <div class="lawyer-phone">
+                <i class="bi bi-telephone-fill"></i> (407) 555-0144
+              </div>
+              <a href="profile.html" class="btn btn-outline-pink btn-view-profile" id="view-profile-3">View Profile</a>
+              <a href="#" class="live-chat-link" id="live-chat-3">
+                <i class="bi bi-chat-dots-fill"></i> Live Chat
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: Sidebar -->
+      <div class="col-lg-4">
+        <div class="pt-4">
+
+          <!-- Search by Map -->
+          <div class="sidebar-card" id="sidebar-map">
+            <div class="sidebar-card-header">
+              Search by Map
+            </div>
+            <div class="sidebar-card-body">
+              <img src="images/map-orlando.png" alt="Map of Orlando, FL" class="map-img">
+            </div>
+          </div>
+
+          <!-- Popular Cities -->
+          <div class="sidebar-card" id="sidebar-cities">
+            <div class="sidebar-card-header" style="background: var(--white); color: var(--text-heading); font-size: 17px;">
+              Popular Cities in Florida
+            </div>
+            <div class="sidebar-card-body">
+              <ul class="popular-cities-list">
+                <li>
+                  <span class="city-name">Miami</span>
+                  <span class="city-count">522 Lawyers</span>
+                </li>
+                <li>
+                  <span class="city-name">Tampa</span>
+                  <span class="city-count">412 Lawyers</span>
+                </li>
+                <li class="active">
+                  <span class="city-name">Orlando</span>
+                  <span class="city-count">152 Lawyers</span>
+                </li>
+                <li>
+                  <span class="city-name">Jacksonville</span>
+                  <span class="city-count">398 Lawyers</span>
+                </li>
+                <li>
+                  <span class="city-name">Fort Lauderdale</span>
+                  <span class="city-count">312 Lawyers</span>
+                </li>
+              </ul>
+              <a href="#" class="sidebar-link">View all cities in Florida →</a>
+            </div>
+          </div>
+
+          <!-- DUI Law Info & Resources -->
+          <div class="sidebar-card" id="sidebar-resources">
+            <div class="sidebar-card-header" style="background: var(--white); color: var(--text-heading); font-size: 17px;">
+              DUI Law Info & Resources
+            </div>
+            <div class="sidebar-card-body">
+              <ul class="resources-list">
+                <li><a href="#">What to Do After a DUI Arrest <i class="bi bi-chevron-right"></i></a></li>
+                <li><a href="#">DUI Penalties in Florida <i class="bi bi-chevron-right"></i></a></li>
+                <li><a href="#">DUI Frequently Asked Questions <i class="bi bi-chevron-right"></i></a></li>
+              </ul>
+              <a href="#" class="sidebar-link">View all DUI resources →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================
+       BOTTOM CTA BAR
+       ============================================================ -->
+  <section class="cta-bar" id="bottom-cta">
+    <div class="container">
+      <div class="cta-content">
+        <div class="cta-left">
+          <div class="cta-icon">
+            <i class="bi bi-headset"></i>
+          </div>
+          <div>
+            <h4>Need legal help right now?</h4>
+            <p>Connect with a verified DUI lawyer on-demand.</p>
+          </div>
+        </div>
+        <a href="#" class="btn btn-cta-white" id="cta-chat-btn">
+          <i class="bi bi-chat-dots-fill"></i> Chat with a Lawyer
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="footer-text footer-left">
+            <i class="bi bi-shield-lock"></i>
+            All lawyers on InKozi are verified and reviewed.
+          </p>
+        </div>
+        <div class="col-md-6 text-end">
+          <p class="footer-text">&copy; 2024 InKozi. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
