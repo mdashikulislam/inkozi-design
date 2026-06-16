@@ -2286,8 +2286,17 @@ h1, h2, h3, h4, h5, h6 {
 .lawyer-grid-card .grid-name {
   font-size: 19px;
   font-weight: 700;
-  color: var(--text-heading);
   margin-bottom: 4px;
+}
+
+.lawyer-grid-card .grid-name a {
+  color: var(--text-heading);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.lawyer-grid-card .grid-name a:hover {
+  color: var(--primary-pink);
 }
 
 .lawyer-grid-card .grid-specialty {
