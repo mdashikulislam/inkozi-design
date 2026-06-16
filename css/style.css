@@ -1570,6 +1570,72 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-muted);
 }
 
+/* Profile Location Card */
+.profile-location-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.profile-location-card .location-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 16px;
+}
+
+.profile-location-card .location-map-container {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.profile-location-card .location-map-container iframe {
+  display: block;
+}
+
+.profile-location-card .address-row {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 16px;
+}
+
+.profile-location-card .location-icon {
+  color: var(--primary-pink);
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.profile-location-card .address-text {
+  font-size: 15px;
+  color: var(--text-body);
+  line-height: 1.5;
+}
+
+.profile-location-card .btn-directions {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--primary-pink);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.profile-location-card .btn-directions i {
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.profile-location-card .btn-directions:hover i {
+  transform: translateX(4px);
+}
+
 /* Sidebar Widgets (Profile) */
 .sidebar-widget {
   background: var(--white);
