@@ -1798,9 +1798,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .premium-footer .footer-logo img {
-  height: 36px;
+  height: 100px;
   margin-bottom: 24px;
-  filter: brightness(0) invert(1);
 }
 
 .premium-footer .footer-desc {
