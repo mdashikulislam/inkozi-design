@@ -1215,14 +1215,15 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: var(--green-light);
-  color: var(--green);
-  border: 1px solid var(--green);
-  border-radius: var(--radius-pill);
-  padding: 4px 14px;
-  font-size: 13px;
+  background: #fdf2f8;
+  color: #a42c94;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 8px 14px;
+  font-size: 14px;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  margin-top: 8px;
 }
 
 .profile-bio {
@@ -1235,23 +1236,23 @@ h1, h2, h3, h4, h5, h6 {
 /* Profile Stats */
 .profile-stats {
   display: flex;
-  gap: 24px;
-  margin-top: 20px;
+  gap: 16px;
+  margin-top: 24px;
   flex-wrap: wrap;
 }
 
 .stat-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 18px;
+  gap: 16px;
+  padding: 16px 24px;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
 }
 
 .stat-item .stat-icon {
   color: var(--primary-pink);
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .stat-item .stat-value {
