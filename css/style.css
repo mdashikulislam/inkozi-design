@@ -401,7 +401,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-search-bar .btn-search {
-  background: var(--primary-solid);
+  background: var(--gradient);
   color: var(--white);
   border: none;
   border-radius: var(--radius-md);
@@ -415,9 +415,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-search-bar .btn-search:hover {
-  background: var(--primary-magenta);
+  background: var(--gradient-hover);
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(224, 10, 112, 0.3);
+  box-shadow: var(--shadow-sm);
 }
 
 .hero-trust {
