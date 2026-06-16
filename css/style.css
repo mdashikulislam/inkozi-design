@@ -2205,3 +2205,67 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 12px;
   }
 }
+
+/* ================================================================
+   LAWYER GRID CARDS
+   ================================================================ */
+.featured-lawyers {
+  background: var(--bg-light);
+}
+
+.lawyer-grid-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lawyer-grid-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.lawyer-grid-card .grid-photo {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.lawyer-grid-card .grid-info {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.lawyer-grid-card .grid-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin: 0;
+}
+
+.lawyer-grid-card .grid-specialty {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.lawyer-grid-card .grid-rating {
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: auto;
+}
+
+.lawyer-grid-card .grid-divider {
+  margin: 16px 0;
+  border-color: var(--border-light);
+  opacity: 1;
+}
