@@ -495,6 +495,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ================================================================
+   SEARCH PAGE
+   ================================================================ */
+.search-bg-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(224, 10, 112, 0.08) 0%, rgba(140, 31, 169, 0.04) 50%, transparent 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ================================================================
    PRACTICE AREAS
    ================================================================ */
 .practice-areas {
@@ -702,6 +716,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: flex-start;
   gap: 10px;
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .trust-badge-item .badge-icon-sm {
@@ -717,6 +733,7 @@ h1, h2, h3, h4, h5, h6 {
 .trust-badge-item .badge-icon-sm.green { background: var(--green-light); color: var(--green); }
 .trust-badge-item .badge-icon-sm.orange { background: #FFF3E0; color: var(--orange); }
 .trust-badge-item .badge-icon-sm.pink { background: #FCE4EC; color: var(--primary-pink); }
+.trust-badge-item .badge-icon-sm.primary { background: var(--primary-solid); color: var(--white); }
 
 .trust-badge-item .badge-title {
   font-size: 14px;
@@ -807,7 +824,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 4px;
   font-size: 14px;
   font-weight: 600;
-  color: var(--green);
+  color: var(--primary-solid);
 }
 
 .lawyer-card .verified-badge i {
@@ -906,9 +923,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar-card .sidebar-card-header {
-  background: var(--gradient-h);
-  color: var(--white);
-  padding: 14px 20px;
+  background: var(--white);
+  color: var(--text-heading);
+  padding: 20px 20px 14px;
   font-size: 16px;
   font-weight: 700;
 }
