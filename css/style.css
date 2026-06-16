@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-inkozi .nav-grow-link {
-  color: var(--primary-pink) !important;
+  color: var(--primary-solid) !important;
   font-weight: 600;
   font-size: 15px;
   padding: 8px 16px !important;
@@ -246,11 +246,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-inkozi .btn-signin {
-  background: var(--gradient-btn);
+  background: var(--gradient);
   color: var(--white) !important;
   border: none;
   border-radius: var(--radius-pill);
-  padding: 8px 24px;
+  padding: 10px 26px;
   font-weight: 600;
   font-size: 14px;
   display: inline-flex;
@@ -290,13 +290,25 @@ h1, h2, h3, h4, h5, h6 {
 .hero-section::before {
   content: '';
   position: absolute;
-  right: -5%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 650px;
-  height: 650px;
+  right: -10%;
+  top: 0;
+  width: 70%;
+  height: 100%;
+  border-radius: 0 0 0 50%;
+  background: radial-gradient(ellipse at 70% 50%, rgba(206, 47, 166, 0.45) 0%, rgba(177, 38, 190, 0.35) 25%, rgba(140, 31, 169, 0.25) 40%, rgba(74, 43, 214, 0.15) 60%, transparent 80%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  right: 5%;
+  bottom: -10%;
+  width: 500px;
+  height: 500px;
   border-radius: var(--radius-circle);
-  background: radial-gradient(circle, rgba(140, 31, 169, 0.3) 0%, rgba(217, 29, 117, 0.2) 35%, rgba(239, 45, 99, 0.1) 55%, transparent 75%);
+  background: radial-gradient(circle, rgba(239, 45, 99, 0.2) 0%, rgba(217, 29, 117, 0.12) 40%, transparent 70%);
   z-index: 0;
   pointer-events: none;
 }
@@ -315,7 +327,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-title .highlight {
-  color: var(--primary-pink);
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero-subtitle {
@@ -343,10 +358,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-badge .badge-icon {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   border-radius: var(--radius-circle);
-  background: var(--primary-pink);
+  background: var(--primary-solid);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -355,15 +370,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-badge .badge-icon i {
   color: var(--white);
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 /* Hero Search Bar */
 .hero-search-bar {
   background: var(--white);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-xl);
-  padding: 8px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.10), 0 1px 6px rgba(0,0,0,0.05);
+  padding: 6px 6px 6px 10px;
   display: flex;
   align-items: center;
   max-width: 680px;
@@ -407,11 +423,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-search-bar .btn-search {
-  background: var(--primary-pink);
+  background: var(--primary-solid);
   color: var(--white);
   border: none;
-  border-radius: var(--radius-md);
-  padding: 12px 32px;
+  border-radius: var(--radius-pill);
+  padding: 14px 36px;
   font-weight: 600;
   font-size: 15px;
   white-space: nowrap;
@@ -423,6 +439,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-search-bar .btn-search:hover {
   background: var(--primary-magenta);
   transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(224, 10, 112, 0.3);
 }
 
 .hero-trust {
@@ -469,19 +486,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .feature-item .feature-icon {
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
   border-radius: var(--radius-circle);
-  border: 2px solid rgba(255,255,255,0.35);
+  border: 2px solid rgba(255,255,255,0.4);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.12);
 }
 
 .feature-item .feature-icon i {
-  font-size: 20px;
+  font-size: 22px;
   color: var(--white);
 }
 
@@ -503,7 +520,7 @@ h1, h2, h3, h4, h5, h6 {
    ================================================================ */
 .practice-areas {
   padding: 64px 0;
-  background: var(--white);
+  background: var(--bg-light);
 }
 
 .practice-card {
@@ -518,14 +535,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .practice-card:hover {
-  border-color: var(--primary-pink);
+  border-color: var(--primary-solid);
   box-shadow: var(--shadow-md);
   transform: translateY(-3px);
 }
 
 .practice-card .practice-icon {
-  font-size: 36px;
-  color: var(--primary-pink);
+  font-size: 40px;
+  color: var(--primary-solid);
   margin-bottom: 12px;
   display: block;
 }
@@ -541,7 +558,7 @@ h1, h2, h3, h4, h5, h6 {
    ================================================================ */
 .how-it-works {
   padding: 64px 0 80px;
-  background: var(--white);
+  background: var(--bg-light);
 }
 
 .step-card {
@@ -1693,8 +1710,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .hero-section::before {
-    width: 550px;
-    height: 550px;
+    width: 65%;
   }
 }
 
@@ -1723,10 +1739,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .hero-section::before {
-    width: 450px;
-    height: 450px;
-    right: -10%;
-    top: 60%;
+    width: 60%;
+    right: -5%;
   }
 
   .hero-search-bar {
@@ -1800,6 +1814,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     padding: 12px;
     gap: 0;
+    border-radius: var(--radius-lg);
   }
 
   .hero-search-bar .search-input-group {
@@ -1822,10 +1837,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .hero-section::before {
-    width: 300px;
-    height: 300px;
-    right: -15%;
-    top: 10%;
+    width: 100%;
+    right: -20%;
+    opacity: 0.5;
+  }
+
+  .hero-section::after {
+    display: none;
   }
 
   .hero-image-wrapper img {
