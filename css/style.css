@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-inkozi .brand-logo-img {
-  height: 48px;
+  height: 44px;
   width: auto;
   object-fit: contain;
 }
@@ -207,8 +207,9 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-dark) !important;
   font-weight: 500;
   font-size: 15px;
-  padding: 8px 18px !important;
+  padding: 8px 14px !important;
   transition: var(--transition);
+  white-space: nowrap;
 }
 
 .navbar-inkozi .nav-link:hover {
@@ -250,13 +251,14 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--white) !important;
   border: none;
   border-radius: var(--radius-pill);
-  padding: 10px 26px;
+  padding: 8px 22px;
   font-weight: 600;
   font-size: 14px;
   display: inline-flex;
   align-items: center;
   gap: 6px;
   transition: var(--transition);
+  white-space: nowrap;
 }
 
 .navbar-inkozi .btn-signin:hover {
@@ -282,36 +284,12 @@ h1, h2, h3, h4, h5, h6 {
 .hero-section {
   position: relative;
   overflow: hidden;
-  padding: 70px 0 50px;
+  padding: 70px 0 0;
   background: var(--white);
-  min-height: 540px;
+  min-height: 580px;
 }
 
-.hero-section::before {
-  content: '';
-  position: absolute;
-  right: -10%;
-  top: 0;
-  width: 70%;
-  height: 100%;
-  border-radius: 0 0 0 50%;
-  background: radial-gradient(ellipse at 70% 50%, rgba(206, 47, 166, 0.45) 0%, rgba(177, 38, 190, 0.35) 25%, rgba(140, 31, 169, 0.25) 40%, rgba(74, 43, 214, 0.15) 60%, transparent 80%);
-  z-index: 0;
-  pointer-events: none;
-}
 
-.hero-section::after {
-  content: '';
-  position: absolute;
-  right: 5%;
-  bottom: -10%;
-  width: 500px;
-  height: 500px;
-  border-radius: var(--radius-circle);
-  background: radial-gradient(circle, rgba(239, 45, 99, 0.2) 0%, rgba(217, 29, 117, 0.12) 40%, transparent 70%);
-  z-index: 0;
-  pointer-events: none;
-}
 
 .hero-content {
   position: relative;
@@ -377,14 +355,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Search Bar */
 .hero-search-bar {
   background: var(--white);
-  border-radius: var(--radius-pill);
-  box-shadow: 0 4px 30px rgba(0,0,0,0.10), 0 1px 6px rgba(0,0,0,0.05);
-  padding: 6px 6px 6px 10px;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.04);
+  padding: 6px;
   display: flex;
   align-items: center;
   max-width: 680px;
   margin-bottom: 24px;
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-color);
 }
 
 .hero-search-bar .search-input-group {
@@ -426,8 +404,8 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--primary-solid);
   color: var(--white);
   border: none;
-  border-radius: var(--radius-pill);
-  padding: 14px 36px;
+  border-radius: var(--radius-md);
+  padding: 12px 32px;
   font-weight: 600;
   font-size: 15px;
   white-space: nowrap;
@@ -460,10 +438,11 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 1;
   text-align: right;
+  margin-right: -40px;
 }
 
 .hero-image-wrapper img {
-  max-height: 500px;
+  max-height: 600px;
   width: auto;
   object-fit: contain;
   position: relative;
@@ -520,7 +499,7 @@ h1, h2, h3, h4, h5, h6 {
    ================================================================ */
 .practice-areas {
   padding: 64px 0;
-  background: var(--bg-light);
+  background: var(--white);
 }
 
 .practice-card {
@@ -1814,7 +1793,6 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     padding: 12px;
     gap: 0;
-    border-radius: var(--radius-lg);
   }
 
   .hero-search-bar .search-input-group {
