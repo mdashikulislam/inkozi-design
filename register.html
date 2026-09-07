@@ -17,25 +17,49 @@
 </head>
 <body>
 
-  <div class="auth-page">
-    <aside class="auth-side">
-      <a href="index.html" class="auth-logo"><img src="assets/images/logo.png" alt="InKozi"></a>
-      <div>
-        <h2>Ask once. Hear from real lawyers.</h2>
-        <p class="side-lead">Create a free account and your first question can be in front of verified local attorneys within minutes.</p>
-        <ul class="side-points"><li><i class="bi bi-cash-coin"></i> Always free for people seeking help</li><li><i class="bi bi-patch-check-fill"></i> Every responding lawyer is verified</li><li><i class="bi bi-clock-history"></i> Open 24/7, replies usually in minutes</li></ul>
+  <div class="auth-shell">
+    <aside class="auth-visual">
+      <div class="mesh"></div>
+      <div class="grid-overlay"></div>
+      <div class="av-top">
+        <a href="index.html" class="av-logo"><img src="assets/images/logo.png" alt="InKozi"></a>
       </div>
-      <div class="side-quote">
-        <p>&ldquo;Three lawyers reached out the same afternoon. I picked the one who explained things best.&rdquo;</p>
-        <div class="sq-author"><img src="assets/images/lawyer-3.jpg" alt="Michael T."><span><strong style="color:#fff;">Michael T.</strong> · Tampa, FL</span></div>
+      <div class="av-body">
+        <span class="av-eyebrow">Ask · Trust · Connect</span>
+        <h2>Ask once. Hear from <span class="glow">real lawyers.</span></h2>
+        <p class="av-lead">Create a free account and your first question can be in front of verified local attorneys within minutes.</p>
+        <div class="av-stack">
+          <div class="av-card c1">
+            <div class="av-avatar">AN</div>
+            <div>
+              <div class="av-title">New question <span class="tag">DUI / DWI</span></div>
+              <p class="av-text">Can I refuse a breathalyzer in Florida without losing my license?</p>
+              <div class="av-time">Orlando, FL · just now</div>
+            </div>
+          </div>
+          <div class="av-pill"><i class="bi bi-star-fill"></i> 4.9 · 128 reviews</div>
+          <div class="av-card c2">
+            <div class="av-avatar"><img src="assets/images/lawyer-1.jpg" alt="Amir A. Ladan"></div>
+            <div>
+              <div class="av-title">Amir A. Ladan replied <span class="tag ok">Verified</span></div>
+              <p class="av-text">You have 10 days to request a review hearing. Let's talk today.</p>
+              <div class="av-time">Criminal Defense · 2 min later</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="av-foot">
+        <div class="av-stat"><strong>12k+</strong><span>questions answered</span></div>
+        <div class="av-stat"><strong>18 min</strong><span>average first reply</span></div>
+        <div class="av-stat"><strong>100%</strong><span>free for people seeking help</span></div>
       </div>
     </aside>
-    <main class="auth-main">
-      <div class="auth-topbar">
+    <main class="auth-panel">
+      <div class="ap-top">
         <a href="index.html" class="back-link"><i class="bi bi-arrow-left"></i> Back to home</a>
-        <span>Already have an account? <a href="login.html">Sign in</a></span>
+        <span class="alt-link">Already have an account? <a href="login.html">Sign in</a></span>
       </div>
-      <div class="auth-form-wrap">
+      <div class="ap-center">
         <div class="auth-card">
           <div class="stepper">
             <div class="step done"><span class="num"><i class="bi bi-check"></i></span><span class="label">Verify phone</span></div>
@@ -46,44 +70,43 @@
           </div>
 
           <h1>Create your account</h1>
-          <p class="auth-sub">We've verified <strong>+1 (407) ••• 0123</strong>. <a href="#">Change</a></p>
+          <p class="ac-sub">Free forever for people seeking help. Takes about a minute.</p>
+          <div class="mb-4"><span class="phone-chip"><i class="bi bi-patch-check-fill"></i> +1 (407) ••• 0123 verified <a href="#">Change</a></span></div>
 
-          <form class="form-modern" action="#" method="post">
+          <form class="auth-form" action="#" method="post">
             <div class="row g-3">
               <div class="col-6">
                 <label class="form-label" for="r-first">First name</label>
-                <input type="text" class="form-control" id="r-first" placeholder="Jane" required>
+                <div class="field"><input type="text" class="form-control" id="r-first" placeholder="Jane" required><i class="bi bi-person lead-icon"></i></div>
               </div>
               <div class="col-6">
                 <label class="form-label" for="r-last">Last name</label>
-                <input type="text" class="form-control" id="r-last" placeholder="Doe" required>
+                <div class="field"><input type="text" class="form-control" id="r-last" placeholder="Doe" required><i class="bi bi-person lead-icon"></i></div>
               </div>
               <div class="col-12">
                 <label class="form-label" for="r-email">Email address</label>
-                <input type="email" class="form-control" id="r-email" placeholder="jane@example.com" required>
+                <div class="field"><input type="email" class="form-control" id="r-email" placeholder="jane@example.com" required><i class="bi bi-envelope lead-icon"></i></div>
               </div>
               <div class="col-12">
                 <label class="form-label" for="r-pass">Password</label>
-                <div class="pw-field">
-                  <input type="password" class="form-control" id="r-pass" placeholder="At least 8 characters" required>
-                  <button type="button" class="toggle-pw" aria-label="Show password"><i class="bi bi-eye"></i></button>
-                </div>
+              <div class="field">
+                <input type="password" class="form-control" id="r-pass" placeholder="At least 8 characters" required>
+                <i class="bi bi-lock lead-icon"></i>
+                <button type="button" class="toggle-pw" aria-label="Show password"><i class="bi bi-eye"></i></button>
+              </div>
               </div>
               <div class="col-12">
                 <label class="form-label" for="r-city">Your city</label>
-                <div class="input-group">
-                  <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
-                  <input type="text" class="form-control" id="r-city" placeholder="Orlando, FL">
-                </div>
+                <div class="field"><input type="text" class="form-control" id="r-city" placeholder="Orlando, FL"><i class="bi bi-geo-alt lead-icon"></i></div>
               </div>
               <div class="col-12">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="r-agree" required>
-                  <label class="form-check-label" for="r-agree" style="font-size: 13.5px;">I agree to the <a href="terms-of-use.html">Terms of Use</a> and <a href="privacy-policy.html">Privacy Policy</a>, and to receive SMS messages for login and security.</label>
+                  <label class="form-check-label" for="r-agree">I agree to the <a href="terms-of-use.html">Terms of Use</a> and <a href="privacy-policy.html">Privacy Policy</a>, and to receive SMS messages for login and security.</label>
                 </div>
               </div>
               <div class="col-12">
-                <button type="submit" class="btn btn-gradient">Create account <i class="bi bi-arrow-right ms-1"></i></button>
+                <button type="submit" class="btn-auth">Create account <i class="bi bi-arrow-right"></i></button>
               </div>
             </div>
           </form>
@@ -93,8 +116,17 @@
             <div class="col-6"><button type="button" class="btn-social"><i class="bi bi-google"></i> Google</button></div>
             <div class="col-6"><button type="button" class="btn-social"><i class="bi bi-apple"></i> Apple</button></div>
           </div>
-          <p class="auth-foot">Are you a lawyer or professional? <a href="claim-territory.html" class="fw-semibold">Join as a provider</a></p>
+          <p class="auth-foot">Are you a lawyer or professional? <a href="claim-territory.html">Join as a provider</a></p>
         </div>
+        <ul class="trust-row">
+          <li><i class="bi bi-shield-lock-fill"></i> 256-bit encryption</li>
+          <li><i class="bi bi-phone-fill"></i> SMS-verified accounts</li>
+          <li><i class="bi bi-envelope-slash-fill"></i> No spam, ever</li>
+        </ul>
+      </div>
+      <div class="ap-foot">
+        <span>&copy; 2024 InKozi, Inc.</span>
+        <span><a href="terms-of-use.html">Terms</a><a href="privacy-policy.html">Privacy</a><a href="contact.html">Help</a></span>
       </div>
     </main>
   </div>
