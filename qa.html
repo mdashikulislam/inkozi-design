@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ask a legal question for free and get answers from verified local lawyers. Browse thousands of answered questions.">
+  <title>Free Legal Q&A — Ask Verified Lawyers | InKozi</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/design/favicon.png">
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar navbar-expand-lg navbar-inkozi sticky-top" id="main-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" id="brand-logo">
+        <img src="assets/design/logo.png" alt="InKozi — Ask Trust Connect" class="brand-logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="search.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lawyers by Location</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="search.html">Florida</a></li>
+              <li><a class="dropdown-item" href="search.html">California</a></li>
+              <li><a class="dropdown-item" href="search.html">Texas</a></li>
+              <li><a class="dropdown-item" href="search.html">New York</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="search.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lawyers by Practice Area</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="search.html">Criminal Defense</a></li>
+              <li><a class="dropdown-item" href="search.html">DUI / DWI</a></li>
+              <li><a class="dropdown-item" href="search.html">Family Law</a></li>
+              <li><a class="dropdown-item" href="search.html">Personal Injury</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="qa.html">Q&amp;A</a></li>
+          <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 nav-actions">
+          <a class="nav-search-btn" href="search.html" aria-label="Search lawyers"><i class="bi bi-search"></i></a>
+          <a href="for-lawyers.html" class="nav-link nav-grow-link d-none d-xl-inline">Grow your practice</a>
+          <a href="login.html" class="btn btn-signin"><i class="bi bi-person-fill"></i> Sign in</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero qa-hero">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7">
+          <span class="eyebrow">Free Legal Q&amp;A</span>
+          <h1>Ask a question. <span class="text-gradient">Get answers from real lawyers.</span></h1>
+          <p class="lead-text">Browse thousands of questions answered by verified attorneys, or post your own for free and hear back from lawyers in your city.</p>
+        </div>
+        <div class="col-lg-5">
+          <div class="row g-3">
+            <div class="col-4"><div class="text-center p-3 rounded-4" style="background: var(--white); border: 1px solid var(--border-light);"><div class="fw-bold" style="font-size: 26px; color: var(--primary-solid);">12k+</div><div style="font-size: 12.5px; color: var(--text-light);">Questions</div></div></div>
+            <div class="col-4"><div class="text-center p-3 rounded-4" style="background: var(--white); border: 1px solid var(--border-light);"><div class="fw-bold" style="font-size: 26px; color: var(--primary-solid);">94%</div><div style="font-size: 12.5px; color: var(--text-light);">Answered</div></div></div>
+            <div class="col-4"><div class="text-center p-3 rounded-4" style="background: var(--white); border: 1px solid var(--border-light);"><div class="fw-bold" style="font-size: 26px; color: var(--primary-solid);">18m</div><div style="font-size: 12.5px; color: var(--text-light);">Avg. reply</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-8">
+          <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+            <div class="qa-filters mb-0">
+              <a href="#" class="chip active">All</a>
+              <a href="#" class="chip">DUI / DWI</a>
+              <a href="#" class="chip">Family Law</a>
+              <a href="#" class="chip">Personal Injury</a>
+              <a href="#" class="chip">Immigration</a>
+              <a href="#" class="chip">Bankruptcy</a>
+            </div>
+            <div class="sort-select listing-header mb-0" style="font-size: 14px; color: var(--text-medium);">
+              <label for="qa-sort" class="me-2">Sort</label>
+              <select id="qa-sort" class="form-select form-select-sm" style="width: auto; display: inline-block;"><option>Newest</option><option>Most viewed</option><option>Unanswered</option></select>
+            </div>
+          </div>
+      <article class="qa-card">
+        <div class="qa-top">
+          <div class="d-flex gap-2 flex-wrap"><span class="qa-tag" style="background: var(--bg-light); color: var(--text-medium);">DUI / DWI</span><span class="qa-tag answered"><i class="bi bi-check-circle-fill"></i> Answered</span></div>
+          <div class="qa-meta"><span><i class="bi bi-geo-alt"></i> Orlando, FL</span><span>2 hours ago</span></div>
+        </div>
+        <h3><a href="question-details.html">Can I refuse a breathalyzer in Florida without losing my license?</a></h3>
+        <p class="qa-excerpt">I was pulled over last night and the officer asked me to blow. I said no and now I'm worried about my license. What happens next?</p>
+        <div class="qa-answer-preview">
+          <img src="assets/images/lawyer-1.jpg" alt="Amir A. Ladan">
+          <div><div class="ap-name">Amir A. Ladan <span>· Criminal Defense · Orlando</span></div><p>Florida's implied consent law means a refusal triggers an automatic one-year suspension, but you have only 10 days to request a formal review hearing, which can preserve your ability to drive...</p></div>
+        </div>
+        <div class="qa-foot"><span><i class="bi bi-chat-left-text"></i>3 answers</span><span><i class="bi bi-eye"></i>412 views</span><span><i class="bi bi-shield-check"></i>Verified lawyers only</span></div>
+      </article>
+      <article class="qa-card">
+        <div class="qa-top">
+          <div class="d-flex gap-2 flex-wrap"><span class="qa-tag" style="background: var(--bg-light); color: var(--text-medium);">Family Law</span><span class="qa-tag answered"><i class="bi bi-check-circle-fill"></i> Answered</span></div>
+          <div class="qa-meta"><span><i class="bi bi-geo-alt"></i> Miami, FL</span><span>5 hours ago</span></div>
+        </div>
+        <h3><a href="question-details.html">Does my ex need my permission to move out of state with our kids?</a></h3>
+        <p class="qa-excerpt">We have 50/50 custody in Florida. She just told me she's taking a job in Georgia and plans to move in six weeks.</p>
+        <div class="qa-answer-preview">
+          <img src="assets/images/lawyer-2.jpg" alt="Sarah J. Connor">
+          <div><div class="ap-name">Sarah J. Connor <span>· Family Law · Miami</span></div><p>Under Florida's relocation statute, a parent moving more than 50 miles for 60 days or more needs either your written agreement or a court order. Six weeks is not much time, so...</p></div>
+        </div>
+        <div class="qa-foot"><span><i class="bi bi-chat-left-text"></i>2 answers</span><span><i class="bi bi-eye"></i>268 views</span><span><i class="bi bi-shield-check"></i>Verified lawyers only</span></div>
+      </article>
+      <article class="qa-card">
+        <div class="qa-top">
+          <div class="d-flex gap-2 flex-wrap"><span class="qa-tag" style="background: var(--bg-light); color: var(--text-medium);">Personal Injury</span><span class="qa-tag"><i class="bi bi-hourglass-split"></i> Awaiting answer</span></div>
+          <div class="qa-meta"><span><i class="bi bi-geo-alt"></i> Tampa, FL</span><span>40 minutes ago</span></div>
+        </div>
+        <h3><a href="question-details.html">Rear-ended at a red light. Insurance offered $1,800. Is that fair?</a></h3>
+        <p class="qa-excerpt">My car has $4k in damage and I've had two chiropractor visits. The other driver's insurer is pushing me to sign quickly.</p>
+        <div class="qa-foot"><span><i class="bi bi-chat-left-text"></i>0 answers</span><span><i class="bi bi-eye"></i>91 views</span><span><i class="bi bi-shield-check"></i>Verified lawyers only</span></div>
+      </article>
+      <article class="qa-card">
+        <div class="qa-top">
+          <div class="d-flex gap-2 flex-wrap"><span class="qa-tag" style="background: var(--bg-light); color: var(--text-medium);">Immigration</span><span class="qa-tag answered"><i class="bi bi-check-circle-fill"></i> Answered</span></div>
+          <div class="qa-meta"><span><i class="bi bi-geo-alt"></i> Austin, TX</span><span>Yesterday</span></div>
+        </div>
+        <h3><a href="question-details.html">My H-1B employer laid me off. How long do I have to find a new sponsor?</a></h3>
+        <p class="qa-excerpt">Got the news Friday. HR mentioned a grace period but couldn't tell me exactly what my options are.</p>
+        <div class="qa-answer-preview">
+          <img src="assets/images/lawyer-3.jpg" alt="Maria E. Gonzalez">
+          <div><div class="ap-name">Maria E. Gonzalez <span>· Immigration · Tampa</span></div><p>You generally have a 60-day grace period from your last day of employment to change status, find a new sponsor who files a transfer petition, or depart. A few things can shorten that...</p></div>
+        </div>
+        <div class="qa-foot"><span><i class="bi bi-chat-left-text"></i>1 answer</span><span><i class="bi bi-eye"></i>530 views</span><span><i class="bi bi-shield-check"></i>Verified lawyers only</span></div>
+      </article>
+      <article class="qa-card">
+        <div class="qa-top">
+          <div class="d-flex gap-2 flex-wrap"><span class="qa-tag" style="background: var(--bg-light); color: var(--text-medium);">Bankruptcy</span><span class="qa-tag answered"><i class="bi bi-check-circle-fill"></i> Answered</span></div>
+          <div class="qa-meta"><span><i class="bi bi-geo-alt"></i> Los Angeles, CA</span><span>2 days ago</span></div>
+        </div>
+        <h3><a href="question-details.html">Will Chapter 7 wipe out my private student loans?</a></h3>
+        <p class="qa-excerpt">About $38k in private loans plus credit card debt. I've read student loans can't be discharged but I'm not sure that applies to private ones.</p>
+        <div class="qa-answer-preview">
+          <img src="assets/images/lawyer-1.jpg" alt="David Kim">
+          <div><div class="ap-name">David Kim <span>· Bankruptcy · Los Angeles</span></div><p>Both federal and private student loans are presumptively non-dischargeable, but private loans that don't meet the definition of a qualified education loan can sometimes be...</p></div>
+        </div>
+        <div class="qa-foot"><span><i class="bi bi-chat-left-text"></i>2 answers</span><span><i class="bi bi-eye"></i>744 views</span><span><i class="bi bi-shield-check"></i>Verified lawyers only</span></div>
+      </article>
+
+          <nav aria-label="Questions pagination" class="mt-4">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-lg-4">
+          <div style="position: sticky; top: 100px;">
+          <div class="ask-box">
+            <h4><i class="bi bi-chat-dots-fill text-pink me-1"></i> Ask a free question</h4>
+            <p class="ask-sub">Verified local lawyers will reply. Usually within minutes.</p>
+            <form class="form-modern" action="#" method="post">
+              <div class="mb-3">
+                <label class="form-label" for="ask-cat">Practice area</label>
+                <select class="form-select" id="ask-cat">
+                  <option>DUI / DWI</option><option>Criminal Defense</option><option>Family Law</option><option>Personal Injury</option><option>Immigration</option><option>Bankruptcy</option><option>Real Estate</option><option>Employment</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="ask-loc">Your location</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+                  <input type="text" class="form-control" id="ask-loc" value="Orlando, FL">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="ask-q">Your question</label>
+                <textarea class="form-control" id="ask-q" rows="4" placeholder="Describe what happened and what you need help with. Leave out names and case numbers."></textarea>
+              </div>
+              <div class="form-check mb-3" style="font-size: 13px;">
+                <input class="form-check-input" type="checkbox" id="ask-public" checked>
+                <label class="form-check-label" for="ask-public">Post anonymously in the public forum so others can learn</label>
+              </div>
+              <button type="submit" class="btn btn-gradient w-100 btn-lg-pill">Submit Question</button>
+            </form>
+            <div class="privacy-note"><i class="bi bi-lock-fill"></i> Your contact details are shared only with responding lawyers. InKozi does not provide legal advice.</div>
+          </div>
+
+            <div class="sidebar-widget mt-4">
+              <div class="widget-header"><h5>Top answering lawyers</h5></div>
+              <div class="widget-body p-0">
+                <ul class="practice-list">
+                  <li><a href="profile.html"><span class="left-content"><img src="assets/images/lawyer-1.jpg" alt="" style="width:32px;height:32px;border-radius:50%;object-fit:cover;"> Amir A. Ladan <span class="text-muted" style="font-size:12px;">· 312 answers</span></span> <i class="bi bi-chevron-right"></i></a></li>
+                  <li><a href="profile.html"><span class="left-content"><img src="assets/images/lawyer-2.jpg" alt="" style="width:32px;height:32px;border-radius:50%;object-fit:cover;"> Sarah J. Connor <span class="text-muted" style="font-size:12px;">· 204 answers</span></span> <i class="bi bi-chevron-right"></i></a></li>
+                  <li><a href="profile.html"><span class="left-content"><img src="assets/images/lawyer-3.jpg" alt="" style="width:32px;height:32px;border-radius:50%;object-fit:cover;"> Maria E. Gonzalez <span class="text-muted" style="font-size:12px;">· 187 answers</span></span> <i class="bi bi-chevron-right"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PREMIUM FOOTER
+       ============================================================ -->
+  <footer class="site-footer premium-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="row gy-4">
+          <!-- Column 1: Brand -->
+          <div class="col-lg-4 col-md-6 footer-brand-col">
+            <a href="index.html" class="footer-logo">
+              <img src="assets/images/logo.png" alt="InKozi Logo">
+            </a>
+            <p class="footer-desc">
+              InKozi connects you with top-rated, verified lawyers on-demand. Ask questions, get trusted answers, and connect with the right legal representation instantly.
+            </p>
+            <div class="footer-socials">
+              <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div class="col-lg-2 col-md-6 footer-links-col offset-lg-1">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="search.html">Find a Lawyer</a></li>
+              <li><a href="how-it-works.html">How it Works</a></li>
+              <li><a href="qa.html">Q&amp;A Forum</a></li>
+              <li><a href="about.html">About InKozi</a></li>
+              <li><a href="for-lawyers.html">For Lawyers &amp; Pricing</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Practice Areas -->
+          <div class="col-lg-2 col-md-6 footer-links-col">
+            <h5 class="footer-heading">Practice Areas</h5>
+            <ul class="footer-links">
+              <li><a href="search.html">Criminal Defense</a></li>
+              <li><a href="search.html">DUI / DWI</a></li>
+              <li><a href="search.html">Personal Injury</a></li>
+              <li><a href="search.html">Family Law</a></li>
+              <li><a href="search.html">Immigration</a></li>
+              <li><a href="blog.html">Legal Insights</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact/App -->
+          <div class="col-lg-3 col-md-6 footer-contact-col">
+            <h5 class="footer-heading">Contact Us</h5>
+            <ul class="footer-contact">
+              <li><i class="bi bi-envelope"></i> support@inkozi.com</li>
+              <li><i class="bi bi-telephone"></i> +1 786-451-0396</li>
+            </ul>
+            <div class="footer-app-badges mt-4">
+              <p class="mb-2 text-white-50" style="font-size: 13px;">Download the App</p>
+              <div class="d-flex gap-2">
+                <a href="#" class="app-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" style="height: 32px;"></a>
+                <a href="#" class="app-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" style="height: 32px;"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="copyright">&copy; 2024 InKozi. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="footer-legal-links">
+              <a href="privacy-policy.html">Privacy Policy</a>
+              <a href="terms-of-use.html">Terms of Use</a>
+              <a href="privacy-policy.html#cookies">Cookie Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
