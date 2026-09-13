@@ -149,6 +149,19 @@
     });
   });
 
+  /* Copy-to-clipboard helpers (error reference ids) */
+  document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var el = document.querySelector(btn.getAttribute('data-copy'));
+      if (!el || !navigator.clipboard) return;
+      navigator.clipboard.writeText(el.textContent.trim()).then(function () {
+        var was = btn.textContent;
+        btn.textContent = 'Copied';
+        setTimeout(function () { btn.textContent = was; }, 1600);
+      });
+    });
+  });
+
   /* Demo forms: do not navigate away when a form has no real action */
   document.querySelectorAll('form[data-next]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
