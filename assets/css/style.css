@@ -6256,11 +6256,11 @@ body.auth-page {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 8px 20px;
+  gap: 8px 14px;
   list-style: none;
   padding: 0;
   margin: 28px 0 0;
-  font-size: 12.5px;
+  font-size: 12px;
   color: var(--auth-faint);
 }
 
@@ -6837,15 +6837,98 @@ body.auth-page {
 }
 
 @media (min-width: 992px) and (max-height: 800px) {
-  .p-foot {
+  .p-foot,
+  .p-note {
     display: none;
   }
 
+  .poster {
+    padding: 26px 32px;
+  }
+
   .poster h2 {
-    font-size: 32px;
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+
+  .poster .p-lead {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  .p-list {
+    gap: 8px;
+  }
+
+  .p-list li {
+    font-size: 13px;
   }
 
   .auth-body {
     padding: 28px 0;
+  }
+}
+
+/* Large monitors: use the extra room */
+@media (min-width: 1600px) {
+  .auth-main {
+    padding: 36px 96px 30px;
+  }
+
+  .auth-box {
+    max-width: 448px;
+  }
+
+  .auth-box.wide {
+    max-width: 512px;
+  }
+
+  .auth-box h1 {
+    font-size: 36px;
+  }
+
+  .auth-poster {
+    padding: 20px 20px 20px 0;
+  }
+
+  .poster {
+    padding: 56px 64px;
+    border-radius: 32px;
+  }
+
+  .poster .p-mid {
+    max-width: 600px;
+  }
+
+  .poster h2 {
+    font-size: 52px;
+  }
+
+  .poster .p-lead {
+    font-size: 17px;
+    max-width: 520px;
+  }
+
+  .p-stack {
+    max-width: 560px;
+  }
+
+  .p-stats {
+    max-width: 620px;
+  }
+
+  .p-stat strong {
+    font-size: 26px;
+  }
+}
+
+/* Tablets: give the single column a little more width */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .auth-box {
+    max-width: 480px;
+  }
+
+  .auth-box.wide {
+    max-width: 540px;
   }
 }
