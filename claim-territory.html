@@ -15,135 +15,141 @@
   <!-- Custom CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="auth-page">
 
-  <div class="auth-shell">
-    <aside class="auth-visual">
-      <div class="mesh"></div>
-      <div class="grid-overlay"></div>
-      <div class="av-top">
-        <a href="index.html" class="av-logo"><img src="assets/images/logo.png" alt="InKozi"></a>
-      </div>
-      <div class="av-body">
-        <span class="av-eyebrow">Ask · Trust · Connect</span>
-        <h2>Own your city. <span class="glow">Keep every dollar.</span></h2>
-        <p class="av-lead">Pick a practice area and a city. If a slot is open, it's yours after a 48-hour verification, and every inquiry from that territory comes to you.</p>
-        <div class="av-stack">
-          <div class="av-card c1">
-            <div class="av-avatar"><i class="bi bi-bell-fill"></i></div>
-            <div>
-              <div class="av-title">New inquiry <span class="tag">Family Law</span></div>
-              <p class="av-text">Custody modification, Tampa. Client available to talk this afternoon.</p>
-              <div class="av-time">Delivered to your dashboard · 1 min ago</div>
-            </div>
-          </div>
-          <div class="av-pill"><i class="bi bi-pin-map-fill"></i> Territory: 3 of 7 filled</div>
-          <div class="av-card c2">
-            <div class="av-avatar"><img src="assets/images/lawyer-2.jpg" alt="Sarah J. Connor"></div>
-            <div>
-              <div class="av-title">Sarah J. Connor <span class="tag ok">Retained</span></div>
-              <p class="av-text">"Pre-screened inquiries mean my phone only rings for real clients."</p>
-              <div class="av-time">Family Law · Miami, FL</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="av-foot">
-        <div class="av-stat"><strong>7</strong><span>providers max per territory</span></div>
-        <div class="av-stat"><strong>$45</strong><span>per month, no contracts</span></div>
-        <div class="av-stat"><strong>48 hrs</strong><span>to verification</span></div>
-      </div>
-    </aside>
-    <main class="auth-panel">
-      <div class="ap-top">
-        <a href="for-lawyers.html" class="back-link"><i class="bi bi-arrow-left"></i> Pricing &amp; benefits</a>
-        <span class="alt-link">Already a provider? <a href="login.html">Sign in</a></span>
-      </div>
-      <div class="ap-center">
-        <div class="auth-card">
-          <div class="stepper">
-            <div class="step active"><span class="num">1</span><span class="label">Select slot</span></div>
-            <div class="line"></div>
-            <div class="step"><span class="num">2</span><span class="label">Verify phone</span></div>
-            <div class="line"></div>
-            <div class="step"><span class="num">3</span><span class="label">Your profile</span></div>
+  <div class="auth">
+    <!-- ============ Form column ============ -->
+    <main class="auth-main">
+      <header class="auth-head">
+        <a href="index.html" class="auth-logo"><img src="assets/design/logo.png" alt="InKozi — Ask Trust Connect"></a>
+        <span class="auth-alt">Already a provider?<a href="login.html">Sign in</a></span>
+      </header>
+
+      <div class="auth-body">
+        <div class="auth-box wide">
+          <div class="auth-steps">
+            <div class="st active"><div class="bar"></div><div class="lbl">1 <span>· Select slot</span></div></div>
+            <div class="st"><div class="bar"></div><div class="lbl">2 <span>· Verify phone</span></div></div>
+            <div class="st"><div class="bar"></div><div class="lbl">3 <span>· Your profile</span></div></div>
           </div>
 
+          <span class="auth-kicker">For professionals</span>
           <h1>Find an open slot</h1>
-          <p class="ac-sub">Each territory holds seven providers. One slot per firm.</p>
+          <p class="auth-sub">Each territory holds seven providers, one slot per firm. Pick a practice area and see what's available.</p>
 
-          <form class="auth-form" action="#" method="post">
+          <form action="#" method="post" data-next="verify-phone.html?next=provider-profile.html" novalidate>
             <div class="row g-3">
               <div class="col-12">
-                <label class="form-label" for="t-cat">Practice category</label>
-                <div class="field">
-                  <select class="form-select" id="t-cat">
-                    <option>DUI / DWI</option><option>Criminal Defense</option><option>Family Law</option><option>Personal Injury</option><option>Immigration</option><option>Bankruptcy</option><option>Real Estate</option><option>Employment Law</option><option>Bail Bonds</option><option>Chiropractic</option>
-                  </select>
-                  <i class="bi bi-briefcase lead-icon"></i>
+                <div class="fld mb-0">
+                  <label for="t-cat">Practice category</label>
+                  <div class="ctrl">
+                    <select class="form-select" id="t-cat">
+                      <option>DUI / DWI</option><option>Criminal Defense</option><option>Family Law</option><option>Personal Injury</option><option>Immigration</option><option>Bankruptcy</option><option>Real Estate</option><option>Employment Law</option><option>Bail Bonds</option><option>Chiropractic</option>
+                    </select>
+                  </div>
                 </div>
               </div>
-              <div class="col-6">
-                <label class="form-label" for="t-state">State</label>
-                <div class="field">
-                  <select class="form-select" id="t-state"><option>Florida</option><option>California</option><option>Texas</option><option>New York</option><option>Georgia</option></select>
-                  <i class="bi bi-map lead-icon"></i>
+              <div class="col-sm-6">
+                <div class="fld mb-0">
+                  <label for="t-state">State</label>
+                  <div class="ctrl">
+                    <select class="form-select" id="t-state"><option>Florida</option><option>California</option><option>Texas</option><option>New York</option><option>Georgia</option></select>
+                  </div>
                 </div>
               </div>
-              <div class="col-6">
-                <label class="form-label" for="t-city">City</label>
-                <div class="field">
-                  <select class="form-select" id="t-city"><option>Orlando</option><option>Miami</option><option>Tampa</option><option>Jacksonville</option><option>Fort Lauderdale</option></select>
-                  <i class="bi bi-geo-alt lead-icon"></i>
-                </div>
-              </div>
-              <div class="col-12">
-                <label class="form-label">Availability for DUI / DWI in Florida</label>
-                <div class="slot-pick">
-                  <input type="radio" name="slot" id="s1" checked><label for="s1">Orlando <span class="open few">2 slots left</span></label>
-                  <input type="radio" name="slot" id="s2"><label for="s2">Miami <span class="open">4 open</span></label>
-                  <input type="radio" name="slot" id="s3"><label for="s3">Tampa <span class="open">3 open</span></label>
-                  <input type="radio" name="slot" id="s4"><label for="s4">Jacksonville <span class="open few">1 slot left</span></label>
+              <div class="col-sm-6">
+                <div class="fld mb-0">
+                  <label for="t-metro">Metro area</label>
+                  <div class="ctrl">
+                    <select class="form-select" id="t-metro"><option>Central Florida</option><option>South Florida</option><option>Tampa Bay</option><option>Northeast Florida</option></select>
+                  </div>
                 </div>
               </div>
               <div class="col-12">
-                <div class="cost-box">
-                  <div class="cb-label">Estimated cost<small>Pay-as-you-go, cancel any 30-day cycle</small></div>
-                  <div class="cb-amount">$375 + $45/mo<span>one-time set-up + hosting</span></div>
+                <div class="fld mb-0">
+                  <div class="fld-label"><span>Availability for DUI / DWI in Florida</span><span class="fw-normal text-secondary">Updated live</span></div>
+                  <div class="slots">
+                    <input type="radio" name="slot" id="s1" checked><label for="s1" class="few">Orlando <small>2 slots left</small><span class="tick"><i class="bi bi-check-lg"></i></span></label>
+                    <input type="radio" name="slot" id="s2"><label for="s2">Miami <small>4 open</small><span class="tick"><i class="bi bi-check-lg"></i></span></label>
+                    <input type="radio" name="slot" id="s3"><label for="s3">Tampa <small>3 open</small><span class="tick"><i class="bi bi-check-lg"></i></span></label>
+                    <input type="radio" name="slot" id="s4"><label for="s4" class="few">Jacksonville <small>1 slot left</small><span class="tick"><i class="bi bi-check-lg"></i></span></label>
+                    <input type="radio" name="slot" id="s5" disabled><label for="s5" class="full">Fort Lauderdale <small>Full · join waitlist</small><span class="tick"><i class="bi bi-check-lg"></i></span></label>
+                    <input type="radio" name="slot" id="s6"><label for="s6">Tallahassee <small>6 open</small><span class="tick"><i class="bi bi-check-lg"></i></span></label>
+                  </div>
                 </div>
               </div>
               <div class="col-12">
-                <button type="submit" class="btn-auth">Continue to verification <i class="bi bi-arrow-right"></i></button>
+                <div class="sum-box">
+                  <div class="sb-label">Estimated cost<small>Pay-as-you-go. Cancel any 30-day cycle. Not billed until you're verified.</small></div>
+                  <div class="sb-amount">$375 + $45/mo<span>one-time set-up + hosting</span></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-auth">Reserve this slot <i class="bi bi-arrow-right"></i></button>
+                <div class="hint text-center mt-2">Your slot is held for 24 hours while you verify. No payment yet.</div>
               </div>
             </div>
           </form>
-          <p class="auth-foot">Questions before you commit? <a href="contact.html">Talk to our sales team</a></p>
-        </div>
-        <ul class="trust-row">
-          <li><i class="bi bi-shield-lock-fill"></i> 256-bit encryption</li>
-          <li><i class="bi bi-phone-fill"></i> SMS-verified accounts</li>
-          <li><i class="bi bi-envelope-slash-fill"></i> No spam, ever</li>
-        </ul>
-      </div>
-      <div class="ap-foot">
-        <span>&copy; 2024 InKozi, Inc.</span>
-        <span><a href="terms-of-use.html">Terms</a><a href="privacy-policy.html">Privacy</a><a href="contact.html">Help</a></span>
-      </div>
-    </main>
-  </div>
 
-  <script>
-    document.querySelectorAll('.toggle-pw').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var input = btn.parentElement.querySelector('input');
-        var show = input.type === 'password';
-        input.type = show ? 'text' : 'password';
-        btn.innerHTML = show ? '<i class="bi bi-eye-slash"></i>' : '<i class="bi bi-eye"></i>';
-      });
-    });
-  </script>
+          <p class="auth-after">Questions before you commit? <a href="contact.html">Talk to our team</a> · <a href="for-lawyers.html">See pricing</a></p>
+        </div>
+      </div>
+
+      <footer class="auth-foot">
+        <span>&copy; 2024 InKozi, Inc. All rights reserved.</span>
+        <span><a href="terms-of-use.html">Terms</a><a href="privacy-policy.html">Privacy</a><a href="contact.html">Help</a></span>
+      </footer>
+    </main>
+
+    <!-- ============ Brand poster ============ -->
+    <aside class="auth-poster" aria-hidden="true">
+      <div class="poster">
+        <div class="p-top">
+          <span class="p-badge"><i class="bi bi-briefcase-fill"></i> InKozi for professionals</span>
+          <span class="p-badge"><span class="dot"></span> 38 slots opened this week</span>
+        </div>
+
+        <div class="p-mid">
+          <h2>Own your city. <em>Keep every dollar.</em></h2>
+          <p class="p-lead">Pick a practice area and a city. If a slot is open it's yours after a 48-hour verification, and every inquiry from that territory comes straight to you. No referral fees, ever.</p>
+
+          <div class="p-stack">
+            <div class="p-card">
+              <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <p class="quote">"Pre-screened inquiries mean my phone only rings for real clients. I retained three new cases in the first month."</p>
+              <div class="who">
+                <span class="ava"><img src="assets/images/lawyer-2.jpg" alt=""></span>
+                <div><strong>Sarah J. Connor</strong><span>Family Law · Miami, FL · provider since 2023</span></div>
+              </div>
+            </div>
+            <div class="p-note">
+              <div class="n-ava"><i class="bi bi-bell-fill"></i></div>
+              <div>
+                <div class="n-title">New inquiry <span class="tag">Family Law</span></div>
+                <div class="n-text">Custody modification, Tampa. Client available to talk this afternoon.</div>
+                <div class="n-time">Delivered to your dashboard · 1 min ago</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-bottom">
+          <div class="p-stats">
+            <div class="p-stat"><strong>7</strong><span>providers max per territory</span></div>
+            <div class="p-stat"><strong>$45</strong><span>per month, no contracts</span></div>
+            <div class="p-stat"><strong>48 hrs</strong><span>to verification</span></div>
+          </div>
+          <div class="p-foot">
+            <div class="avas"><img src="assets/images/lawyer-1.jpg" alt=""><img src="assets/images/lawyer-2.jpg" alt=""><img src="assets/images/lawyer-3.jpg" alt=""><span>+2k</span></div>
+            <span>Join 2,400+ verified providers already on InKozi</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
 
   <!-- Bootstrap 5.3 JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/auth.js"></script>
 </body>
 </html>
